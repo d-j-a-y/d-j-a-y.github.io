@@ -1,0 +1,75 @@
+body {
+  padding: 0; margin: 0;
+  background: linear-gradient(309deg, #4b0e8d, #13d33d, #791d4c, #06dfd9);
+  background-size: 800% 800%;
+  animation: GradientAnimation 47s ease infinite;
+  font-family: Noto Sans, sans-serif;
+  text-align:justify;
+  height: 100vh; width: 100%;
+/*
+  overflow: none;
+*/
+  position: relative;
+  color: white;
+}@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 46%;
+  }
+  50% {
+    background-position: 100% 55%;
+  }
+  100% {
+    background-position: 0% 46%;
+  }
+}
+
+/*
+https://leaverou.github.io/css3patterns/#cross-dots
+*/
+div.fullpage{
+    padding:0 0;margin:0 0; width:100%; height:100%;
+    background-color:rgba(0, 0, 0, 0.1);
+    position: fixed; z-index:-1; 
+    background:
+    radial-gradient(#ffffff30 3px, transparent 4px),
+    radial-gradient(#ffffff30 3px, transparent 4px),
+    linear-gradient(#000 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a450 75px, #a4a4a450 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a450 76px, #a4a4a450 77px, transparent 78px, transparent 109px),
+    #ffffff10;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  animation: GradientAnimation 47s cubic-bezier(1,-0.03,1,.41) infinite;
+}@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 46%;
+  }
+  50% {
+    background-position: 100% 55%;
+  }
+  100% {
+    background-position: 0% 46%;
+  }
+}
+
+.alignright{text-align:right;}
+.givemespace{height:1em;}
+
+h1{
+    margin:0 0.1em; padding:0 0.3em;
+    font-size:4em; font-weight:900;
+    border-left-color:white; border-left-style:ridge;border-left-width:0.3em;
+}
+h2{
+    margin:0 0em;padding:0 0.3em;
+    font-size:2em; font-weight:900; text-align:right;
+    border-right-color:white; border-right-style:groove;border-right-width:0.3em; }
+
+a{color: lightgreen; }
+a.tryit{font-size:1.5em; }
+
+li{margin:0 0em 2em 0em;}
+
+div.code{font-size:1.5em; font-weight:500; text-align:center;}
+
+article{font-size:2em; width: 60%; margin:0 20%;}

@@ -1,0 +1,1102 @@
+<html>
+<head>
+<title>We Are Gifs Animals</title>
+<meta name="generator" content="Bluefish 2.2.6" >
+<meta name="author" content="Jérôme Blanchi @ TML & Xavier Dubourdieu">
+<meta name="date" content="2016-10-22T20:55:23+0200" >
+<meta name="copyright" content="">
+<meta name="keywords" content="art, reecriture, rewrite, remake, gif, gifs, chat, cat">
+<meta name="description" content="Le bestiaire dans l'Histoire de l'Art, de Jérôme Bosh à We are just animals d'Olaf Breuning, l'animal 
+	miroir de l'homme.">
+<meta name="ROBOTS" content="">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+
+<link rel="stylesheet" href="./js/jquery-ui-1.11.2.custom/jquery-ui.css">
+
+<link href="css/wearegifsanimals.css" rel="stylesheet" type="text/css" /> 
+<link href="css/waga_personnages.css" rel="stylesheet" type="text/css" /> 
+
+<style> 
+ 
+</style>
+
+</head>
+
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> -->
+<body id="fond" class="blockuserselect" style="background-image: url(./ressources/fond/bg_lastation.jpeg)"
+  onload="initAudioApiSupport('./ressources/son/ambianceRUE.mp3',sceneSoundBank)" >
+
+<!-- Test script capacities-->
+<script>	</script>
+<noscript>
+<p><b>EN : </b>Sorry, your browser does not support JavaScript!</p>
+<p><b>FR : </b>Désolé, votre navigateur ne supporte pas le JavaScript!</p>
+</noscript>
+
+<div id="progress" class="blockuserselect">
+		<div id="slider">
+			<div id="sliderbar">
+			</div>
+			<div id="slidertext">
+			</div>
+		</div>
+</div>
+
+<!-- HOW TO ADD an Animal ? -->
+<!-- Done using the wagainsert.sh script located in ./scripts/ -->
+<!--	wagainsert.sh --help
+#############################################################################
+### WHATFOR : automate the waga update : generate the css, js and html    ###
+### HOWTO : wagainsert.sh "gifanimals_name" "index"                       ###
+#############################################################################
+-->
+
+
+<!-- IDEE -->
+<!-- index playsound : nom pas chiffre ??? -->
+<!-- Function de creation des zanimaux a partir d'un jolie tableau! -->
+
+<!-- TODO ? Selection des visible par tableau (flags) -->
+
+<!--
+
+Voir : begin js 3rd / 534
+IDEE pour avoir un html plus clean, avec creation des <div> animaux a la volée (idem que Alice quoi!)
+function createZanimaux(sName, aButtons)
+{
+var animalus = document.createElement(“div”);
+animalus.id = sName;
+animalus.className = “animemals”;
+for (var i = 0; i < aButtons.length; i++)
+{
+var thisButton = aButtons[i];
+var button = document.createElement(“span”);
+var icon = document.createElement(“img”);
+//more code here
+button.setAttribute(“href”, thisButton[1]);
+button.className = “toolbar-button”;
+icon.src = thisButton[0];
+icon.className = “toolbar-icon”;
+button.appendChild(icon);
+toolbar.appendChild(button);
+}
+document.body.appendChild(animalus);
+}-->
+
+<!--WAGA_NEW_ANIMEMAL-->
+<div class="resizable blockuserselect draggable animemal raphael_beagle" id="" onmouseover="playSound(81);"  onmouseout="stopSound(81);">
+  	<img src="./ressources/raphael_beagle.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal charlotte_lapin" id="" onmouseover="playSound(80);"  onmouseout="stopSound(80);">
+  	<img src="./ressources/charlotte_lapin.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal squale" id="" onmouseover="playSound(79);"  onmouseout="stopSound(79);">
+  	<img src="./ressources/squale.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal jules_raptor" id="" onmouseover="playSound(78);"  onmouseout="stopSound(78);">
+  	<img src="./ressources/jules_raptor.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal joan_fourmie" id="" onmouseover="playSound(77);"  onmouseout="stopSound(77);">
+  	<img src="./ressources/joan_fourmie.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal florent_chaton" id="" onmouseover="playSound(76);"  onmouseout="stopSound(75);">
+  	<img src="./ressources/florent_chaton.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal zoe_limace" id="" onmouseover="playSound(75);"  onmouseout="stopSound(75);">
+  	<img src="./ressources/zoe_limace.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal tom_ornithorynque" id="" onmouseover="playSound(74);"  onmouseout="stopSound(74);">
+  	<img src="./ressources/tom_ornithorynque.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal jerome_suricate" id="" onmouseover="playSound(73);"  onmouseout="stopSound(73);">
+  	<img src="./ressources/jerome_suricate.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal arno_alligatore" id="" onmouseover="playSound(72);"  onmouseout="stopSound(72);">
+  	<img src="./ressources/arno_alligatore.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal evan_pandaroux" id="" onmouseover="playSound(71);"  onmouseout="stopSound(71);">
+  	<img src="./ressources/evan_pandaroux.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal fabien_hyene" id="" onmouseover="playSound(70);"  onmouseout="stopSound(70);">
+  	<img src="./ressources/fabien_hyene.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal brandon_singe" id="" onmouseover="playSound(69);"  onmouseout="stopSound(69);">
+  	<img src="./ressources/brandon_singe.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal leny_morue" id="" onmouseover="playSound(68);"  onmouseout="stopSound(68);">
+  	<img src="./ressources/leny_morue.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal aminata_mantris" id="" onmouseover="playSound(67);"  onmouseout="stopSound(67);">
+  	<img src="./ressources/aminata_mantris.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal milo_calamar" id="" onmouseover="playSound(66);"  onmouseout="stopSound(66);">
+  	<img src="./ressources/milo_calamar.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+<div class="resizable blockuserselect draggable animemal anais_CHOUETTE" id="" onmouseover="playSound(65);"  onmouseout="stopSound(65);">
+  	<img src="./ressources/anais_CHOUETTE.gif" onload="updateProgressBar()" alt="" >
+  	<div class="corner TL rotatable"></div>
+  	<div class="corner TR"></div>
+  	<div class="corner BL duplicatable"></div>
+  	<div class="corner BR resizeui"></div>
+</div>
+
+	<!-- DEBUT GROUPE HUBLOT Fevrier 2016 -->	<!-- DEBUT GROUPE HUBLOT Fevrier 2016 --> <!-- DEBUT GROUPE HUBLOT Fevrier 2016 -->
+		<!-- DEBUT GROUPE HUBLOT Fevrier 2016 --> <!-- DEBUT GROUPE HUBLOT Fevrier 2016 --> <!-- DEBUT GROUPE HUBLOT Fevrier 2016 -->
+			<!-- DEBUT GROUPE HUBLOT Fevrier 2016 -->
+<div class="resizable blockuserselect draggable animemal rayan_scorpion" id="" onmouseover="playSound(64);"  onmouseout="stopSound(64);">
+<img src="./ressources/rayan_scorpion.gif" onload="updateProgressBar()" alt="" >
+<div class="corner TL rotatable"></div>
+	<div class="corner TR"></div>
+	<div class="corner BL duplicatable"></div>
+	<div class="corner BR resizeui"></div>
+</div>
+
+<div class="resizable blockuserselect draggable animemal kevin_cerf" id="" onmouseover="playSound(63);"  onmouseout="stopSound(63);">
+<img src="./ressources/kevin_cerf.gif" onload="updateProgressBar()" alt="" >
+<div class="corner TL rotatable"></div>
+	<div class="corner TR"></div>
+	<div class="corner BL duplicatable"></div>
+	<div class="corner BR resizeui"></div>
+</div>
+		
+<div class="resizable blockuserselect draggable animemal herve_elephant" id="" onmouseover="playSound(62);"  onmouseout="stopSound(62);">
+<img src="./ressources/herve_elephant.gif" onload="updateProgressBar()" alt="" >
+<div class="corner TL rotatable"></div>
+	<div class="corner TR"></div>
+	<div class="corner BL duplicatable"></div>
+	<div class="corner BR resizeui"></div>
+</div>
+
+<div class="resizable blockuserselect draggable animemal hatim_koala" id="" onmouseover="playSound(61);"  onmouseout="stopSound(61);">
+<img src="./ressources/hatim_koala.gif" onload="updateProgressBar()" alt="" >
+<div class="corner TL rotatable"></div>
+	<div class="corner TR"></div>
+	<div class="corner BL duplicatable"></div>
+	<div class="corner BR resizeui"></div>
+</div>
+
+<div class="resizable blockuserselect draggable animemal achille_mantre_religieuse" id="" onmouseover="playSound(60);"  onmouseout="stopSound(60);">
+<img src="./ressources/achille_mantre_religieuse.gif" onload="updateProgressBar()" alt="" >
+<div class="corner TL rotatable"></div>
+	<div class="corner TR"></div>
+	<div class="corner BL duplicatable"></div>
+	<div class="corner BR resizeui"></div>
+</div>
+
+<div class="resizable blockuserselect draggable animemal eliamine_zebre" id="" onmouseover="playSound(59);"  onmouseout="stopSound(59);">
+<img src="./ressources/eliamine_zebre.gif" onload="updateProgressBar()" alt="" >
+<div class="corner TL rotatable"></div>
+	<div class="corner TR"></div>
+	<div class="corner BL duplicatable"></div>
+	<div class="corner BR resizeui"></div>
+</div>
+
+
+<div class="resizable blockuserselect draggable animemal wassim_cobra" id="" onmouseover="playSound(58);"  onmouseout="stopSound(58);">
+<img src="./ressources/wassim_cobra.gif" onload="updateProgressBar()" alt="" >
+<div class="corner TL rotatable"></div>
+	<div class="corner TR"></div>
+	<div class="corner BL duplicatable"></div>
+	<div class="corner BR resizeui"></div>
+</div>
+
+
+<div class="resizable blockuserselect draggable animemal kyrian_murene" id="" onmouseover="playSound(57);"  onmouseout="stopSound(57);">
+<img src="./ressources/kyrian_murene.gif" onload="updateProgressBar()" alt="" >
+<div class="corner TL rotatable"></div>
+	<div class="corner TR"></div>
+	<div class="corner BL duplicatable"></div>
+	<div class="corner BR resizeui"></div>
+</div>
+
+
+<div class="resizable blockuserselect draggable animemal damien_girafe" id="" onmouseover="playSound(56);"  onmouseout="stopSound(56);">
+<img src="./ressources/damien_girafe.gif" onload="updateProgressBar()" alt="" >
+<div class="corner TL rotatable"></div>
+	<div class="corner TR"></div>
+	<div class="corner BL duplicatable"></div>
+	<div class="corner BR resizeui"></div>
+</div>
+
+
+<div class="resizable blockuserselect draggable animemal aladin_orque" id="" onmouseover="playSound(55);"  onmouseout="stopSound(55);">
+<img src="./ressources/aladin_orque.gif" onload="updateProgressBar()" alt="" >
+<div class="corner TL rotatable"></div>
+	<div class="corner TR"></div>
+	<div class="corner BL duplicatable"></div>
+	<div class="corner BR resizeui"></div>
+</div>
+
+<div class="resizable blockuserselect draggable animemal jade_lapin" id="" onmouseover="playSound(54);"  onmouseout="stopSound(54);">
+<img src="./ressources/jade_lapin.gif" onload="updateProgressBar()" alt="" >
+<div class="corner TL rotatable"></div>
+	<div class="corner TR"></div>
+	<div class="corner BL duplicatable"></div>
+	<div class="corner BR resizeui"></div>
+</div>
+
+
+	<!-- DEBUT GROUPE HUBLOT Automne 2015 -->	<!-- DEBUT GROUPE HUBLOT Automne 2015 -->	<!-- DEBUT GROUPE HUBLOT Automne 2015 -->
+		<!-- DEBUT GROUPE HUBLOT Automne 2015 -->	<!-- DEBUT GROUPE HUBLOT Automne 2015 -->	<!-- DEBUT GROUPE HUBLOT Automne 2015 -->
+			<!-- DEBUT GROUPE HUBLOT Automne 2015 -->
+
+	<div class="resizable blockuserselect draggable animemal meriem_papillon" id="" onmouseover="playSound(53);"  onmouseout="stopSound(53);">
+		<img src="./ressources/meriem_papillon.gif" onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal ahtisham_scarabee" id="" onmouseover="playSound(52);"  onmouseout="stopSound(52);">
+		<img src="./ressources/ahtisham_scarabee.gif" onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal ayoub_lezard" id="" onmouseover="playSound(51);"  onmouseout="stopSound(51);">
+		<img src="./ressources/ayoub_lezard.gif" onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal anam_tyrex" id="" onmouseover="playSound(50);"  onmouseout="stopSound(50);">
+		<img src="./ressources/anam_tyrex.gif" onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal sofiane_scorpion" id="" onmouseover="playSound(49);"  onmouseout="stopSound(49);">
+		<img src="./ressources/sofiane_scorpion.gif" onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal rebecca_dauphin" id="" onmouseover="playSound(48);"  onmouseout="stopSound(48);">
+		<img src="./ressources/rebecca-dauphin.gif" onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal ouley_chauveSouris" id="" onmouseover="playSound(47);"  onmouseout="stopSound(47);">
+		<img src="./ressources/ouley_chauveSouris.gif" onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal tasmia_pingouin" id="" onmouseover="playSound(46);"  onmouseout="stopSound(46);">
+		<img src="./ressources/tasmia_pingouin.gif" onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<!-- DEBUT GROUPE LIsERONs ete 2015 -->	<!-- DEBUT GROUPE LIsERONs ete 2015 -->	<!-- DEBUT GROUPE LIsERONs ete 2015 -->
+	<!-- DEBUT GROUPE LIsERONs ete 2015 -->	<!-- DEBUT GROUPE LIsERONs ete 2015 -->
+		<!-- DEBUT GROUPE LIsERONs ete 2015 -->	
+		
+	<div class="resizable blockuserselect draggable animemal xaviera_sirene" id="" onmouseover="playSound(45);"  onmouseout="stopSound(45);">
+		<img src="./ressources/xaviera_sirene.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+		
+	<div class="resizable blockuserselect draggable animemal xaviera_escargot" id="" onmouseover="playSound(44);"  onmouseout="stopSound(44);">
+		<img src="./ressources/xaviera_escargot.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>	
+	
+	<div class="resizable blockuserselect draggable animemal sherine_tigre" id="" onmouseover="playSound(43);"  onmouseout="stopSound(43);">
+		<img src="./ressources/sherine_tigre.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+		
+	<div class="resizable blockuserselect draggable animemal sarra_cheval" id="" onmouseover="playSound(42);"  onmouseout="stopSound(42);">
+		<img src="./ressources/sarra_cheval.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal ryan_lion" id="" onmouseover="playSound(41);"  onmouseout="stopSound(41);">
+		<img src="./ressources/ryan_lion.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+		
+		
+	<div class="resizable blockuserselect draggable animemal prescillia_tortue" id="" onmouseover="playSound(40);"  onmouseout="stopSound(40);">
+		<img src="./ressources/prescillia_tortue.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal mohamed_chien" id="" onmouseover="playSound(39);"  onmouseout="stopSound(39);">
+		<img src="./ressources/mohamed_chien.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal laetitia_ours" id="" onmouseover="playSound(38);"  onmouseout="stopSound(38);">
+		<img src="./ressources/laetitia_ours.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal khalima_faucon" id="" onmouseover="playSound(37);"  onmouseout="stopSound(37);">
+		<img src="./ressources/khalima_faucon.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal iles_aigle" id="" onmouseover="playSound(36);"  onmouseout="stopSound(36);">
+		<img src="./ressources/iles_aigle.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal clement_homard" id="" onmouseover="playSound(35);"  onmouseout="stopSound(35);">
+		<img src="./ressources/clementine_homard.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal bryan_renard" id="" onmouseover="playSound(34);"  onmouseout="stopSound(34);">
+		<img src="./ressources/bryan_renard.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal arthus_chat" id="" onmouseover="playSound(33);"  onmouseout="stopSound(33);">
+		<img src="./ressources/arthus_phoque.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>	
+	
+	<div class="resizable blockuserselect draggable animemal amaury_panthere_rose" id="" onmouseover="playSound(32);"  onmouseout="stopSound(32);">
+		<img src="./ressources/amaury_panthere_rose.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>	
+	
+	<div class="resizable blockuserselect draggable animemal amaury_komodo" id="" onmouseover="playSound(31);"  onmouseout="stopSound(31);">
+		<img src="./ressources/amaury_komodo.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal allya_renard" id="" onmouseover="playSound(30);"  onmouseout="stopSound(30);">
+		<img src="./ressources/allya_renard.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal alexandre_serpent" id="" onmouseover="playSound(29);"  onmouseout="stopSound(29);">
+		<img src="./ressources/alexandre_serpent.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal adam_panthere" id="" onmouseover="playSound(28);"  onmouseout="stopSound(28);">
+		<img src="./ressources/adam_panthere.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<!-- end sound update -->
+	
+	<!-- DEBUT GROUPE MLDS?? -->	<!-- DEBUT GROUPE MLDS?? -->	<!-- DEBUT GROUPE MLDS?? -->
+		<!-- DEBUT GROUPE MLDS?? -->	<!-- DEBUT GROUPE MLDS?? -->
+		<!-- DEBUT GROUPE MLDS?? -->
+
+	<div class="resizable blockuserselect draggable animemal kaouthar_papillon" id="" onmouseover="playSound(27);"  onmouseout="stopSound(27);">
+		<img src="./ressources/kaouthar-papillon.gif" onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal zinedine" id="" onmouseover="playSound(26);"  onmouseout="stopSound(26);">
+		<img src="./ressources/zinedine-aigle.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal wadah" id="" onmouseover="playSound(25);"  onmouseout="stopSound(25);">
+		<img src="./ressources/wadah-loup.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal maria_chat" id="" onmouseover="playSound(24);"  onmouseout="stopSound(24);">
+		<img src="./ressources/maria-chat.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal sondes" id="" onmouseover="playSound(20);"  onmouseout="stopSound(20);">
+		<img src="./ressources/sondes-flamand.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal mira_staff" id="" onmouseover="playSound(21);"  onmouseout="stopSound(21);">
+		<img src="./ressources/mira-staff.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal eline" id="" onmouseover="playSound(22);"  onmouseout="stopSound(22);">
+		<img src="./ressources/eline-cheval.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal anais" id="" onmouseover="playSound(23);"  onmouseout="stopSound(23);">
+		<img src="./ressources/anais_yorkshire.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal eddy" id="" onmouseover="playSound(19);"  onmouseout="stopSound(19);">
+		<img src="./ressources/eddy-kangourou.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+<!--	
+	<div class="resizable blockuserselect draggable animemal jordy" id="" onmouseover="playSound(18);"  onmouseout="stopSound(18);">
+		<img src="./ressources/jordy-chien.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+-->	
+	<div class="resizable blockuserselect draggable animemal falou_loup" id="" onmouseover="playSound(17);"  onmouseout="stopSound(17);">
+		<img src="./ressources/falou-loup.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal anis" id="" onmouseover="playSound(14);"  onmouseout="stopSound(14);">
+		<img src="./ressources/anis-corbeau.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal renda_leopard" id="" onmouseover="playSound(15);"  onmouseout="stopSound(15);">
+		<img src="./ressources/renda-leopard.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal halima" id="" onmouseover="playSound(16);"  onmouseout="stopSound(16);">
+		<img src="./ressources/halima-biche.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<!-- DEBUT GROUPE HUBLot fevrier/paques 2015 -->	<!-- DEBUT GROUPE HUBLot fevrier/paques 2015 -->
+	<!-- DEBUT GROUPE HUBLot fevrier/paques 2015 -->		
+	<!-- DEBUT GROUPE HUBLot fevrier/paques 2015 -->
+
+	<div class="resizable blockuserselect draggable animemal wallid" id="" onmouseover="playSound(13);"  onmouseout="stopSound(13);">
+		<img src="./ressources/wallid.gif"  onload="updateProgressBar()" alt="" > 
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	
+	<div class="resizable blockuserselect draggable animemal pablo_cigalle" id="" onmouseover="playSound(12);"  onmouseout="stopSound(12);">
+		<img src="./ressources/pablo-cigale.gif"  onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal oceane_sirene" id="" onmouseover="playSound(11);"  onmouseout="stopSound(11);">
+		<img src="./ressources/oceane.gif"  onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal lylou" id="" onmouseover="playSound(09);"  onmouseout="stopSound(09);">
+		<img src="./ressources/lylou-panda.gif"  onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal abel_cafard" id="" onmouseover="playSound(06);"  onmouseout="stopSound(06);">
+		<img src="./ressources/abel_cafard.gif"  onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal adam-croco" id="" onmouseover="playSound(07);"  onmouseout="stopSound(07);">
+		<img src="./ressources/adam_c_croco.gif"  onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal adam-p_ours" id="" onmouseover="playSound(08);"  onmouseout="stopSound(08);">
+		<img src="./ressources/adam_p.gif"  onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<!-- DEBUT GROUPE PLace sur le NET 2014 -->	<!-- DEBUT GROUPE PLace sur le NET 2014 -->	<!-- DEBUT GROUPE PLace sur le NET 2014 -->
+	<!-- DEBUT GROUPE PLace sur le NET 2014 -->	<!-- DEBUT GROUPE PLace sur le NET 2014 -->
+	<!-- DEBUT GROUPE PLace sur le NET 2014 -->		
+	
+	<div class="resizable blockuserselect draggable animemal milo" id="" onmouseover="playSound(10);"  onmouseout="stopSound(10);">
+		<img src="./ressources/milo_canard.gif"  onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal alicia_serpent" id="" onmouseover="playSound(0);"  onmouseout="stopSound(0);">
+		<img src="./ressources/alicia.gif"  onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal chanette" id="" onmouseover="playSound(3);"  onmouseout="stopSound(3);">
+		<img src="./ressources/chanette.gif"  onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+
+	<div class="resizable blockuserselect draggable animemal tania" id="" onmouseover="playSound(4);"  onmouseout="stopSound(4);">
+		<img src="./ressources/tania.gif"  onload="updateProgressBar()" alt="">
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal baptiste" id="" onmouseover="playSound(1);" onmouseout="stopSound(1);">
+		<img src="./ressources/baptiste-araigne.gif"  onload="updateProgressBar()" alt="">
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal carmen_coq" id="" onmouseover="playSound(2);"  onmouseout="stopSound(2);">
+		<img src="./ressources/carmen-coq.gif"  onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<div class="resizable blockuserselect draggable animemal xavier" id="" onmouseover="playSound(5);"  onmouseout="stopSound(5);">
+		 <img src="./ressources/libellule.gif"  onload="updateProgressBar()" alt="" >
+		 <div class="corner TL rotatable"></div>
+		 <div class="corner TR"></div>
+		 <div class="corner BL duplicatable"></div>
+		 <div class="corner BR resizeui"></div>
+	</div>
+	
+	<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->	
+	<!-- UI UI UI UI -->		<!-- UI UI UI UI -->		<!-- UI UI UI UI -->		<!-- UI UI UI UI -->		<!-- UI UI UI UI -->	
+
+<!-- bouton de reinitialisation -->
+<div class="cleanscene uielements" id="cleanscene" onclick="cleanScene()"></div>
+
+<!-- boutons de changement de fond-->	
+<div class="flipbg uielements" id="flipbgdroite" onclick="changebackground(1)"></div>
+<div class="flipbg uielements" id="flipbggauche" onclick="changebackground(-1)"></div>
+
+<!-- bouton de copie d'ecran de la scene-->
+<div class="uielements" id="fileoutput" onclick="snapshotScene()"></div>
+<!-- tricks for having a nice file name in save dialog box -->
+<a id="snapshot"></a>
+
+<!-- bouton d'ajout de fond-->
+<div class="fileinputs uielements">
+  <input type="file" class="file" id="image_input" accept="image/*;capture=camera" onchange="handleFiles(this.files)">
+	<div class="fakefile">
+		<input />
+	</div>
+</div>
+
+<!-- bouton de bascule son-->
+<!-- TODO -->
+<!-- 	<div class="togglesound uielements" id="togglesound" onclick="toggleSound()"></div> -->
+
+
+
+<!--
+ __   __  _______  __    _  __   __ 
+|  |_|  ||       ||  |  | ||  | |  |
+|       ||    ___||   |_| ||  | |  |
+|       ||   |___ |       ||  |_|  |
+|       ||    ___||  _    ||       |
+| ||_|| ||   |___ | | |   ||       |
+|_|   |_||_______||_|  |__||_______|
+
+-->
+
+
+	<!-- NOTE NOTE -->		<!-- NOTE NOTE -->		<!-- NOTE NOTE -->		<!-- NOTE NOTE -->		<!-- NOTE NOTE -->	
+	<!-- NOTE NOTE -->		<!-- NOTE NOTE -->		<!-- NOTE NOTE -->		<!-- NOTE NOTE -->		<!-- NOTE NOTE -->	
+
+<!-- Données de la page de présentation de l'atelier -->
+<!-- Menu 1 : Note d'intention -->
+<a class="menuhaut" name="menuhaut" style=" top:5%; left:5% " onclick="openMenu('menuNoteintention')" >note d'intention</a>
+<div class="menuhaut" name="menuhaut" id="menuNoteintention">
+	<h2 class="titremenu">note d'intention</h2>
+	<div style="z-index:150; position:fixed; bottom:0%; left:0% " >
+		<img src="./ressources/libellule1erplan.png" alt="" >
+	</div>
+	
+	<h3 class="cite"> « L’art est la vérité du sentir, parce que le rythme est la vérité de l’aisthesis<span class="cite"><a name="intraref1"></a>[<a href="#ref1">1</a>]</span> »  Henri Maldiney.
+</h3>
+	
+	<h3>
+		WE ARE GIF ANIMALS<span class="cite"><a name="intraref0"></a>[<a href="#ref0">0</a>]</span>, pour une approche esthétique de l'Internet.
+	</h3>
+	<p>
+		Qu'est-ce qu'une pratique ludique et vivante des T.I.C.E.s<span class="cite"><a name="intraref2"></a>[<a href="#ref2">2</a>]</span>, 
+		ou pour mieux dire, une pratique créatrice de formes de vie et d’action? Qu'est-ce qu'une pratique esthétique de l'Internet ? 
+		Peut-on délimiter des protocoles, un peu comme des modes d’emploi, qui s’efforceraient de montrer, fût-ce de manière didactique, 
+		quels sont les contours et les bords d’une poïétique<span class="cite"><a name="intraref3"></a>[<a href="#ref3">3</a>]</span>,
+		d’un usage artistique, de l’Internet ?
+
+	</p><p>
+		L’œuvre d’art originale et ses copies potentielles se situent-elles sur un même plan de réalité ? Jusqu’où peut-on parler de 
+		la reproductibilité d’une œuvre d’art ?  Quand peut-on parler d'objet authentique ? Quelles sont les frontières entre création
+		et falsification? Et enfin quelles sont les conditions d'un art numérique ? La pratique des nouvelles technologies, et 
+		l'émergence du virtuel, ont  comme enrichi les différentes strates de la réalité. Le réel se doublait déjà, depuis toujours, 
+		des puissances de l'imaginaire, mais il se double maintenant du miroir des mondes virtuels. La question à laquelle doivent être 
+		conduits les spectateurs est celle de la singularité essentielle du processus créateur, de l'hypothétique reproductibilité de 
+		ce processus, et de l'écart entre l'original et ses simulacres. Mais si la logique de la dissémination à l’œuvre dans la pièce 
+		d'Olaf Breuning<span class="cite"><a name="intraref0"></a>[<a href="#ref0">0</a>]</span>, interroge la dialectique post-moderne du local et du global, du sujet et de la tribu, elle  ouvre aussi 
+		un espace de liberté, un lieu pour se perdre et pour se retrouver, un "chemin qui ne mène nulle part" si ce n’est peut-être à soi.
+
+	</p><p>
+		S’il s'agit d'interroger le statut du spectateur, demandons-nous : Qu'est-ce qu'un sujet ? Qu'est-ce qu'un sujet esthétique ? 
+		Qu'est-ce qu'une subjectivité traversée par le flux des nouvelles technologies : Une subjectivité substantielle ? Ou bien 
+		transitionnelle, toujours en mouvement, en translation ? Le geste de réactualisation d'un objet artistique doit conduire les jeunes,
+		individuellement et collectivement, à réfléchir sur l’usage qu'ils font des nouvelles technologies, et donc sur la constitution 
+		de leur subjectivité propre, en tant qu'elle est créatrice de formes, de rythmes et de ruptures. Il n’y a jamais que des corps et 
+		des langages, des langages à montrer, des corps à décoder.  La subjectivité interrogée est un peu comme celle qui allume et qui 
+		éteint l'ordinateur, autrement dit une subjectivité itinérante, toujours en transit, qui remet en question la stabilité 
+		substantielle d'un moi identique à lui-même. La production esthétique de la subjectivité passe par des flux d'informations, 
+		autrement dit par des vitesses et des intensités – un peu comme ces gamers qui font l’épreuve d’eux-mêmes sur le mode d’une 
+		auto-affection hyperbolique et toujours discontinue.
+	</p><p>	
+		Quelle est la signification de ce travail de réécriture ? Il part du postulat que parmi les paroles et les discours sans nombre 
+		prononcés par les hommes, raisonnables ou poétiques, logiques ou irrationnels, un sens s'est construit qui nous surplombe.  
+		Il n'y a donc de compréhension du sens d’un texte que par son inscription intertextuelle, par la participation de ce texte 
+		à un réseau global d’autres textes, qui le dépasse et le constitue. Ce qui vaut pour le texte vaut aussi pour l'image - 
+		qu'on apprend à décoder, à lire, à interpréter, et enfin à inventer. Nous retrouvons là la dimension réticulaire et contextuelle
+		de toute signification (texte, image), en tant qu'elle fait sens au milieu d'un réseau, d'un système de signes, par un jeu de 
+		différentiation interne. Malgré cet axiome de base, - "dans une langue, il n'y a que des différences" - nous pouvons cependant 
+		lier ensemble les concepts de réécriture, de culture et d'hypertertextualité, mais aussi ceux de sujet, de langage, de corps 
+		et de communauté. Je propose ainsi au participant de réfléchir sur la manière dont il fabrique du sens, à l'intérieur d'un 
+		ensemble culturel donné. Il existe en effet  des règles esthétiques de compréhension d’une  œuvre d'art, des codifications 
+		qui structurent la réactualisation des archives passées.  Le protocole que nous proposons, entre le jeu de réflexion et le jeu 
+		de rôles, entre game and playing, doit conduire le participant à réfléchir sur ce qu'est le sens, en le produisant lui-même.
+	</p><p>	
+		«  Habiter le monde en poète … » affirmait déjà le poète Hölderlin. La production esthétique de la subjectivité, dans son 
+		rapport aux nouvelles technologies, constitue un défi poïétique, où chacun est appelé à construire sa propre fiction sensible
+		en réinterprétant le réel. Or les demeures de la pensée sont aussi les « aîtres du langage », de la médiation symbolique. 
+		C’est en passant par l’expression artistique, par la matérialité des signifiants, et la différenciation des signes qu’une 
+		habitation poétique du monde est possible. La pièce trouve ainsi son nœud et son dénouement dans une approche didactique du
+		processus créateur et du processus de subjectivation à l'ère des nouvelles technologies.
+	</p><p>
+		Qu’est-ce qu’un sujet esthétique?  Si ce n’est un passage, toujours incertain, entre l’ici et l’ailleurs - abîme ou béance, 
+		qui appelle l’ouvert d’un monde à exister.
+	
+	</p><p>
+		Texte de Xavier Dubourdieu et Yann Mangourny, Nice le 1er octobre 2015.
+	</p>	
+	
+	<small class="intraref">
+	<a name="ref0"></a>[<a href="#intraref0">0</a>] <a href="http://olafbreuningphoto.tumblr.com/post/22454770569/2005-we-are-just-animals-c-print-120-x-150-cm
+"><cite>We are just animals</cite></a>, collage, 2005, Olaf Breuning. </br>
+	<a name="ref1"></a>[<a href="#intraref1">1</a>] Grec, sensation</br>
+	<a name="ref2"></a>[<a href="#intraref2">2</a>] Technologies de l'Information de la Communicaion et de l'Éducation</br>
+	<a name="ref3"></a>[<a href="#intraref3">3</a>] La poïétique a pour objet "l'étude des potentialités inscrites dans une situation donnée qui débouche sur une création nouvelle." (source : définition web, <a href="https://fr.wikipedia.org/wiki/Po%C3%AF%C3%A9tique">wikipédia</a>.)
+</br>
+	</small>
+	
+	<p>
+		<b>Bibliographie.</b>
+	</p><p>
+	- Karl-Otto Apel, <cite>Le logos propre au langage humain.</cite> L'éclat, collection Tiré à part, 1994. </br>
+	- Alain Badiou, <cite>Logiques des mondes</cite>, Seuil, Paris 2006. </br>
+	- Michel de Certeau, <cite>La Fable Mystique, 1. XVIé XVIIé siècle. chapitre 2. Le jardin, délires et délices de Jérôme Bosch.</cite> Gallimard. </br>
+	- Claire Bardainne et Vincenzo Susca, <cite>Récréations, Galaxies de l'imaginaire postmoderne</cite> préface de Michel Maffesoli, CNRS éditions, Paris 2009. </br>
+	- Walter Benjamin, <cite>L’œuvre d’art à l’époque de sa reproductibilité technique</cite>, dernière version 1939, in « Œuvres III », Paris, Gallimard, 2000 </br>
+	- Françoise Dastur, <cite>Hölderlin le retournement natal</cite>, Encre Marine, Paris 1997. </br>
+	- Éliane Escoubas, <a href="http://culture.univ-lille1.fr/fileadmin/lna/lna59/lna59p06.pdf"><cite>Penser l’art et la folie avec Henri Maldiney. De la création : cycle raison folie déraison </cite><img src="ressources/ui/PDF-Document-icon.png" alt=""></a>, Université de Lille 1.</br>
+	- Michel Foucault, <cite>La naissance de la clinique</cite>, Paris 1963, PUF. </br>
+	- Martin Heidegger,  <cite>Acheminement vers la parole</cite>, Gallimard, coll. « Tel »,‎ 1988 </br>
+	- Jean-Francois Lyotard, <cite>Le post-modernisme</cite>, Minuit, collection critique. </br>
+	- Henri Maldiney, <cite>Regard Parole Espace</cite>, Paris, Cerf, 2012 </br>
+	- Henri  Maldiney, <cite>Existence et création</cite>, Encre marine </br>
+	- Michel Picard, <cite>La lecture comme jeu, Essai sur la littérature</cite>,  (1986), Paris, Minuit. </br>
+	- Platon, <cite>Phèdre</cite>, GF </br>
+	- Michel Ribon, <cite>Esthétique de l'effacement. Essai sur l'art et l'effacement.</cite> L'Harmattan. </br>
+	- Clément Rosset, <cite>Le réel et son double</cite>, Paris, PUF </br>
+	- Ferdinand de Saussure, <cite>Cours de linguistique générale, La lecture comme jeu – essai sur la littérature</cite>, Éditions de Minuit (coll. « Critique »), 1986 </br>
+	- Ludwig Wittgenstein, <cite>Tractatus logico-philosophicus</cite>, Gallimard. </br>
+	</p>
+	
+	<p>
+		<b>Ressources.</b>
+	</p><p>
+	- <a href="http://olafbreuningphoto.tumblr.com/post/22454770569/2005-we-are-just-animals-c-print-120-x-150-cm"><cite>We are just animals</cite></a>, collage, 2005, Olaf Breuning. </br>
+	- <a href="https://fr.wikipedia.org/wiki/Le_Jardin_des_d%C3%A9lices#/media/File:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution_2.jpg"><cite>Le jardin des délices</cite></a>, 1503 - 1504, Jérôme Bosch. </br>
+	- <a href="http://artgallery.yale.edu/collections/objects/52956"><cite>40 dessins en marge du Buffon</cite></a>, Pablo Picasso. </br>
+	- <a href="https://www.youtube.com/watch?v=BckqviVaWl0&feature=youtu.be"><cite>Green porno</cite></a>, Courts métrages, durée 2:50, 2008, Isabella Rosselini, arteTV.</br>
+	- <a href="https://vimeo.com/57223799"><cite>Still alive, pigeon with blakberries</cite></a>, video, 0:43, 2005, Christian Gonzenbach, France.</br>
+	- <a href="https://www.youtube.com/watch?v=zf2fMJsDccU&feature=youtu.be"><cite>Paris is Bourgeois</cite></a>, video, durée 1:34, 2010, Pascal Lièvre, France.</br>
+	- <a href="https://www.facebook.com/video.php?v=289283647817158&set=vb.201576283254562&type=2&theater"><cite>Lena</cite></a>, art video, 11:56, 2010, Magyarosi Eva, Hongrie.</br>
+	- <a href="https://vimeo.com/75596629"><cite>Gets physical</cite></a>, 8:44, dans l’atelier de Daniel Gordon, 2013, New York, Etats Unis.</br>
+	- <a href="http://thomasgrunfeld.blogspot.fr/p/ressources-iconographiques.html"><cite>Misfits</cite></a>, taxidermie, Thomas Grunfeld, 2006, Allemagne.</br>
+	- <a href="https://www.youtube.com/watch?v=FEVUGhBKkO0&feature=youtu.be"><cite>Kaputt</cite></a>, Maurizio Cattelan, 2013.</br>
+	- <a href="https://www.youtube.com/watch?v=LoG_SrJSXwQ&feature=youtu.be"><cite>Lise</cite></a>, milky way, video, Adel Abdessemed, France.</br>
+	- <a href="http://damienhirst.com"><cite>Dream unicorn</cite></a>, 2008, Damien Hirst.</br>
+	- <a href="http://maider-fortune.fr/projets/licorne"><cite>Licorne</cite></a>, vidéo 7 minutes, 2007, Maider Fortuné.</br>
+	- <a href="http://airdeparis.com/artists/jean-luc-verna/verna/new/dessins/jean_luc_verna.html"><cite>Le Deuil</cite></a>, Transfert sur papier ancien rehaussé de crayon de couleur et de fard, cadre 42,7 x 52,2 cm, 2011, Jean-Luc Verna.</br>
+	- <a href="http://katjanovi.net"><cite>Innate Disposition</cite></a>, digital print plastic cutout displays, Katja Novitskova, 2012.</br>
+	- <a href="http://theomercier.com/projet/id/9/320"><cite>Bête et sauvage</cite></a>, Théo Mercier, 2010. Vues d’exposition Musée de la chasse, Paris Mars Mai 2010. (photo : Marc Dommage.)</br>
+	- <a href="http://2013.suzanne-tarasieve.com/exhibition/julien-salaud-armee-de-lair-armee-de-terre-tout-le-monde-dehors/?lang=frArmée de l’air"><cite>Armée de terre, tout le monde dehors !</cite></a> Julien Salaud, 2012. Galerie Suzanne Tarasieve / LOFT 19, Paris. (vues d’exposition © Rebecca Fanuele).</br>
+	- <a href="http://pascalbernier.com/"><cite> Accidents de chasse</cite></a>, Pascal Bernier, 1994-2000.</br>
+	- <a href="http://antonio-gagliardi.com/"><cite>Ironie du sort</cite></a>, Antonio Gagliardi.</br>
+	- <a href="http://crennjulie.com/2014/10/18/rencontre-avec-adrien-vermont-laura-18/"><cite>Le cheval</cite></a>, dessins, Adrien Vermont.</br>
+	- <a href="http://airdeparis.com/artists/jean-luc-verna/verna.htm"><cite>Les tuileries</cite></a>, 2011, Transfert sur papier ancien rehaussé de crayon de couleur, 36,5 x 46,2 cm, Jean-Luc Verna.</br>
+	- <a href="http://davidmach.com/coathangers/"><cite>Coathangers</cite></a>, David Mach.</br>
+	- <a href="http://www.ufunk.net/artistes/hybrides-liu-xue/"><cite>Hybrides</cite></a>, 2014, Liu Xue. </br>
+	- <a href="https://41.media.tumblr.com/1238c64f7ef5e2cd088f725080125b0c/tumblr_mfaqilGxlb1r42cljo1_1280.jpg"><cite>Garden</cite></a>, 2010, Acrlyc on canvas, 8×8 feet. Courtesy of Mountain Fold Gallery, Korakrit Arunanondchai. </br>
+
+	</p>
+	
+
+	<div style="height: 24em;"></div>
+</div>
+
+<!-- Menu 2 : 3 jours d'atelier -->
+<a class="menuhaut" name="menuhaut" style="top:5%; left:15%;"  onclick="openMenu('menuAteliers')" >3 jours d'atelier</a>
+<div class="menuhaut" name="menuhaut" id="menuAteliers">
+	<h2 class="titremenu">3 jours d'atelier</h2>	
+	<p>	
+	WE ARE GIF ANIMALS, propose aux jeunes des quartiers Est de Nice de se réapproprier la pièce d'Olaf Breuning 
+	<a href="http://olafbreuningphoto.tumblr.com/post/22454770569/2005-we-are-just-animals-c-print-120-x-150-cm"><cite>We are just animals</cite></a> pour
+	en proposer une version interactive visible sur un site web et en réalité augmentée dans l'espace public le <strong>1 Juin 2016 place Garibaldi à Nice</strong>. 
+	</p>
+	
+	<h3>Jour 1. QUEL ANIMAL ES-TU ?</h3>
+
+	"Le cabinet de curiosités où règne l’animal est une ouverture sur l’interrogation, celui de la vie dans sa dimension universelle, de ses règnes divers, où l’homme n’est 
+	plus qu’une race parmi tant d’autres, aux griffes plus acérées, aux instincts plus poussés. C’est aussi une ouverture onirique sur l’anthropomorphisme ou le zoomorphisme, 
+	selon l’orientation de notre pensée : la bête ressemble-t-elle à l’homme ou l’homme à la bête? Il faudrait décoder le langage animal pour que les deux intéressées de 
+	l’interrogation expriment leur point de vue."
+	</br>
+	<small> Curiositas : Chapitre2. Homo Homini Lupus, la bête au centre du cabinet de curiosités. Artimeless</small>
+	<ul>
+		<li>Le bestiaire dans l'histoire de l'Art "De Jérôme Bosch à Olaf Breuning, l'animal miroir de l'homme." 
+			(médiation pour les yeux) </li>
+		<li>Quel animal es-tu ? QCM interactif </li>
+		<li>Comment créer un .gif animé sur Gimp à partir d'une image trouvée sur Internet ?</li>
+	</ul>
+	<h3>Jour 2. LE CARNAVAL DES ANIMAUX.</h3>	
+	<ul>
+	<li>"L'écho animal, de Camille Saint Saens à Jacques Lejeune en passant par PanPot..." 
+		(médiation pour l'oreille)</li>
+	<li>Training collectif : échauffement corps et voix, recherche et écriture d'une phrase chorégraphique. </li>
+	<li>De la captation vidéo sur fond vert à l'export d'une séquence vidéo.</li>
+	<li>Rugis, bondis, vole, bêle, caquette... Comment enregistrer un son et le modifier en lui appliquant 
+		des effets sur Audacity ?</li>
+	</ul>
+	<h3>Jour 3. RÉALITÉ AUGMENTÉE ET PROGRAMMATION INTERACTIVE</h3>
+	<ul>	
+		<li>Comment créer des effets spéciaux à partir d'un gif animé et d'une séquence vidéo ?</li> 
+		<li>Comment exporter ses contenus en gardant la transparence (.gif et .flv)?</li>
+		<li>Comment spatialiser des contenus (x, y, z) et les rendre interactifs avec l'application
+		metaio (programmation interactive) ?</li>
+	</ul>
+	<p>
+	WE ARE GIF ANIMALS, est une co-production LE HUBLOT dans le cadre du parcours urbain en réalité augmentée <a href="https://sites.google.com/a/lehublot.net/artmobilis/home">ART MOBILIS</a>
+	 et bénéficie du soutien du Fonds d'Expérimentation pour la Jeunesse, Ministère de la Jeunesse, de la Région PACA, de la CAF Alpes Maritimes et de la Fondation BNP Paribas.
+	</p>
+	
+</div>
+
+<!-- Menu  "EXpo" -->
+<a class="menuhaut" name="menuhaut" style=" top:5%; left:5% " onclick="openMenu('menuExpo')" >expositions</a>
+<div class="menuhaut" name="menuhaut" id="menuExpo">
+	<h2 class="titremenu">expositions</h2>	
+<ul>
+<h3>2016</h3>
+<li><a href="http://festivalgif.org/" target="_blank" >Festival du Gif</a> - St Étienne - octobre 2016</li>
+<li><a href="http://endmc.com/" target="_blank" >Endemic</a> - La Station / il était un truc - Nice - juillet 2016</li>
+<h3>2015</h3>
+<li><a href="http://www.lastation.org/exposition/ad-hoc/" target="_blank">Ad-Hoc</a> - La Station / il était un truc - Nice - juillet 2015</li>
+<li><a href="http://www.botoxs.fr/visiteursdusoir/" target="_blank" >les Visiteurs du soir</a> - Botox(s) / Le Hublot - Nice - mai 2015</li>
+<h3>2014</h3>
+<li>Place sur le Net, 10 ans! - <a href="http://lehublot.net" target="_blank">Le Hublot</a> - Nice - septembre 2014</li>
+</ul>
+</div>
+
+	
+<!-- Menu  "fiche technique" -->
+<a class="menuhaut" name="menuhaut" style="top:5%; left:25% "  onclick="openMenu('menuFicheTech')" >fiche technique</a>
+<div class="menuhaut" name="menuhaut" id="menuFicheTech">
+
+	<div style="z-index:100; position:fixed; top:28%; right:-2% " >
+		<img src="./ressources/alicia.gif"   alt="" >
+	</div>
+	<h2 class="titremenu">fiche technique</h2>
+
+	Les stages de création se déroulent par petits groupes de 6 à 12 participants (aucun pré-requis, avoir envie de participer) 
+	en espace numérique avec PC ou Mac connectés à Internet (1 poste par participant) et en salle de danse, 
+	gymnase ou espace configuré pour le training et la captation vidéo sur fond vert.
+
+	<h3>TECHNIQUES ABORDÉES</h3>
+	image animée (.gif), corps et voix, vidéo (captation sur fond vert), montage vidéo et effets spéciaux, 
+	audio, réalité augmentée, programmation interactive.
+
+	<h3>LOGICIELS & APPLICATIONS UTILISÉES</h3>
+	<a href="http://gimp.org" target="_blank">Gimp</a>, 
+	<a href="http://audacityteam.org" target="_blank">Audacity</a>, 
+	Adobe premier Pro,
+	After Effect, 
+	<a href="https://www.aurasma.com/" target="_blank">Aurasma</a>,
+	<a href="http://bluefish.openoffice.nl/" target="_blank">Bluefish</a>
+	
+	<h3>ART & CULTURES NUMÉRIQUES (médiation pour les yeux, médiation pour l'oreille)</h3>
+	<ul>
+		<li>"Le bestiaire dans l'Histoire de l'Art, de Jérôme Bosh à We are just animals d'Olaf Breuning, l'animal 
+	miroir de l'homme." </li>
+		<li>"L'écho animal, de Camille Saint Saens à Jacques Lejeune en passant par PanPot."</li>
+	</ul>
+	
+	<h3>INTERVENANTS ARTISTIQUES & PÉDAGOGIQUES</h3>
+	<ul>
+		<li>Xavier Dubourdieu - artiste et intervenant pédagogique</li>
+		<li>Pascal Gaudo - vidéaste indépendant</li>
+		<li>Alicia Malialin - danseuse et comédienne</li>
+	</ul>
+	
+	<h3>ACCOMPAGNEMENT PROJET</h3>
+	<ul>
+		<li>Frédéric Alemany - chargé de production <a href="http://lehublot.net" target="_blank">le Hublot</a>, projet : ART MOBILIS (<a href="http://www.experimentation.jeunes.gouv.fr/1260-education-populaire-pour-et-par-les-jeunes-pratiques-numeriques-lieux-innovants-et-medias-de-jeunes-apep.html" target="_blank">F.E.J</a>)</li>
+		<li>Baptiste Audibert - animateur multimedia au Hublot</li>
+		<li>Jérôme Blanchi - développement - <a href="http://transmission-libre.org" target="_blank">http://transmission-libre.org</a></li>
+	</ul>
+	<h3>INSCRIPTIONS, COORDINATION ET ADMINISTRATION</h3>
+	<ul>
+		<li>Tania Cognée - chargé de développement numérique <a href="http://lehublot.net" target="_blank">le Hublot</a> - tania@lehublot.net - 04 93 31 33 72</li>
+		<li>Céline Roques - administratrice <a href="http://lehublot.net" target="_blank">le Hublot</a> - celine@lehublot.net - 04 93 31 33 72</li>
+	</ul>	
+</div>
+
+<!-- Menu 4 : fiche d'inscription -->
+<!-- <a class="menuhaut" name="menuhaut" style="top:5%; left:35%"  onclick="openMenu('menuHaut4')" >fiche inscription</a>
+<div class="menuhaut" name="menuhaut" id="menuHaut4">
+
+	<h3>Not all objects</h3>
+Not all objects and their events make use of the return value, so sometimes it’s redundant. Also, it’s not
+always the case that returning false cancels the action. For reasons of browser history rather than logic,
+it’s sometimes true that cancels the action. Generally speaking, it’s best to return true and deal with
+the exceptions as you find them.
+	<h3>Some events are</h3>
+Some events are not directly linked with the user’s actions as such. For example, the window object has
+the load event, which fires when a page is loaded, and the unload event, which fires when the page is
+unloaded (that is, when the user either closes the browser or moves to another page).
+	<h3>Event handlers for</h3>
+Event handlers for the window object actually go inside the < body > tag. For example, to add an event
+handler for the load and unload events, you’d write the following
+
+</div> -->
+
+<!-- Bas de page : bascule tableau gif animé & menu presentation -->
+<div id="menubas"  onclick="footerAfficheMenu()"></div>
+
+<!-- inclusion des scripts à la fin du DOM -->
+<!-- JQuery UI - draggable & resizable --> 
+<script src="./js/jquery-ui-1.11.2.custom/jquery-1.11.2.min.js"></script>
+<script src="./js/jquery-ui-1.11.2.custom/jquery-ui.js"></script>
+
+<script src="./js/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+<!-- Fonctions de masquage en basculement de page -->
+<script type="text/javascript" src="./js/wearegifanimals.js"></script>
+<!-- Ressources sonores -->
+<script type="text/javascript" src="./js/waga_son.js"></script>
+
+<!-- Gestion des ressources sonores -->
+<script type="text/javascript" src="./js/webaudioapi/audioapi.js"></script>
+<script type="text/javascript" src="./js/webaudioapi/buffer-loader.js"></script>
+<!-- https://github.com/niklasvh/html2canvas/ -->
+<script type="text/javascript" src="./js/html2canvas/html2canvas.min.js"></script>
+
+
+</body>
+</html>
